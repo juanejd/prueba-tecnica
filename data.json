@@ -1,0 +1,502 @@
+[
+  {
+    "id": "f03b06db-9535-4f2a-bd11-84b4d4742c81",
+    "tipo": "Díalogo",
+    "texto": "El usuario indica: Formulario de la Superintendencia Nacional de Salud - Cobertura.",
+    "actor": "Des. Usuario",
+    "isExpanded": null,
+    "equipo": "Ninguno",
+    "herramienta": "Ninguno",
+    "interacciones": [
+      {
+        "id": "31cd4fae-b47a-4b94-bae2-2cb522eb4027",
+        "tipo": "Díalogo",
+        "texto": "De acuerdo a tu conocimiento, compara con los casos conocidos el caso mencionado por el usuario y determina si existe similitud. Si la hay, responde únicamente con la palabra **APLICA**. Si no encuentras similitud con ninguno de los casos, responde únicamente con la palabra **VERIFICAR**.",
+        "actor": "Instrucción",
+        "isExpanded": null,
+        "equipo": "Expertos",
+        "herramienta": "Ninguno",
+        "interacciones": [
+          {
+            "id": "e1a8217d-acd5-4c2d-8e60-6afebf9be3c5",
+            "tipo": "Díalogo",
+            "texto": "El texto contiene la palabra APLICA.",
+            "actor": "Instrucción",
+            "isExpanded": null,
+            "equipo": "Ninguno",
+            "herramienta": "Ninguno",
+            "interacciones": [
+              {
+                "id": "deb9b5f5-f02c-4800-ba39-ac4b31c4c6cf",
+                "tipo": "Díalogo",
+                "texto": "Pregunta al usuario ¿Usa abogado?",
+                "actor": "Instrucción",
+                "isExpanded": null,
+                "equipo": "Ninguno",
+                "herramienta": "Ninguno",
+                "interacciones": [
+                  {
+                    "id": "35209014-abaa-4d51-8ce1-60d2d6438186",
+                    "tipo": "Díalogo",
+                    "texto": "El usuario responde: Sí.",
+                    "actor": "Des. Usuario",
+                    "isExpanded": null,
+                    "equipo": "Ninguno",
+                    "herramienta": "Ninguno",
+                    "interacciones": [
+                      {
+                        "id": "22c86cd8-4c31-42a5-a4bd-80c3d6ce8ce6",
+                        "tipo": "Díalogo",
+                        "texto": "Pregunta al usuario qué **\"Tipo de usuario es el apoderado\"** de las opciones: - Natural - Jurídica",
+                        "actor": "Instrucción",
+                        "isExpanded": true,
+                        "equipo": "Ninguno",
+                        "herramienta": "Ninguno",
+                        "interacciones": [
+                          {
+                            "id": "38fd5afc-b520-45ce-9ecd-4b327ac9105b",
+                            "tipo": "Díalogo",
+                            "texto": "El usuario responde: Natural.",
+                            "actor": "Des. Usuario",
+                            "isExpanded": null,
+                            "equipo": "Ninguno",
+                            "herramienta": "Ninguno",
+                            "interacciones": [
+                              {
+                                "id": "451554a1-3830-4fb5-b2de-c38d55d208db",
+                                "tipo": "Díalogo",
+                                "texto": "Solicita al usuario que ingrese los siguientes datos del apoderado: \n- Tipo de documento (obligatorio)\n- Identificación (obligatorio)\n- Primer Nombre (obligatorio)\n- Segundo Nombre\n- Primer Apellido (obligatorio)\n- Segundo Apellido",
+                                "actor": "Instrucción",
+                                "isExpanded": null,
+                                "equipo": "Ninguno",
+                                "herramienta": "Ninguno",
+                                "interacciones": [
+                                  {
+                                    "id": "ca846403-fcdd-48af-960a-cea21971c989",
+                                    "tipo": "Díalogo",
+                                    "texto": "El usuario responde.",
+                                    "actor": "Des. Usuario",
+                                    "isExpanded": null,
+                                    "equipo": "Ninguno",
+                                    "herramienta": "Ninguno",
+                                    "interacciones": [
+                                      {
+                                        "id": "83e322f4-2d53-4015-a5cc-d36a4e1ff49a",
+                                        "tipo": "Díalogo",
+                                        "texto": "Solicita al usuario que ingrese los siguientes datos de domicilio del apoderado: \n- País (obligatorio)\n- Dirección notificación judicial (obligatorio)",
+                                        "actor": "Instrucción",
+                                        "isExpanded": null,
+                                        "equipo": "Ninguno",
+                                        "herramienta": "Ninguno",
+                                        "interacciones": [
+                                          {
+                                            "id": "85c95259-21d3-42a7-9f45-b52c5afe6cf3",
+                                            "tipo": "Díalogo",
+                                            "texto": "El usuario responde.",
+                                            "actor": "Des. Usuario",
+                                            "isExpanded": null,
+                                            "equipo": "Ninguno",
+                                            "herramienta": "Ninguno",
+                                            "interacciones": [
+                                              {
+                                                "id": "83b46154-aa55-4ec6-998c-9d99c3306709",
+                                                "tipo": "Díalogo",
+                                                "texto": "Solicita al usuario que ingrese los siguientes datos de contacto del apoderado: \n- Teléfono celular (obligatorio)\n- Teléfono fijo o celular\n- Correo electrónico (obligatorio)",
+                                                "actor": "Instrucción",
+                                                "isExpanded": null,
+                                                "equipo": "Ninguno",
+                                                "herramienta": "Ninguno",
+                                                "interacciones": [
+                                                  {
+                                                    "id": "fba38181-4ae9-45df-9129-3592a2a68db8",
+                                                    "tipo": "Díalogo",
+                                                    "texto": "El usuario responde.",
+                                                    "actor": "Des. Usuario",
+                                                    "isExpanded": null,
+                                                    "equipo": "Ninguno",
+                                                    "herramienta": "Ninguno",
+                                                    "interacciones": [
+                                                      {
+                                                        "id": "ad2ef27a-b1d7-40ef-860b-2ff816b3ad3b",
+                                                        "tipo": "Díalogo",
+                                                        "texto": "Pregunta al usuario qué **\"Tipo de usuario es el demandante\"** de las opciones: - Natural - Jurídica",
+                                                        "actor": "Instrucción",
+                                                        "isExpanded": null,
+                                                        "equipo": "Expertos",
+                                                        "herramienta": "Ninguno",
+                                                        "interacciones": [
+                                                          {
+                                                            "id": "a577b27e-342d-4ad9-9c41-f90321141aa2",
+                                                            "tipo": "Díalogo",
+                                                            "texto": "El usuario responde: Natural.",
+                                                            "actor": "Des. Usuario",
+                                                            "isExpanded": null,
+                                                            "equipo": "Ninguno",
+                                                            "herramienta": "Ninguno",
+                                                            "interacciones": [
+                                                              {
+                                                                "id": "0cee4b56-d267-47b7-a35a-069f1f6d383d",
+                                                                "tipo": "Díalogo",
+                                                                "texto": "Solicita al usuario que ingrese los siguientes datos del demandante: - Tipo de documento (obligatorio) - Identificación (obligatorio) - Primer Nombre (obligatorio) - Segundo Nombre - Primer Apellido (obligatorio) - Segundo Apellido",
+                                                                "actor": "Instrucción",
+                                                                "isExpanded": null,
+                                                                "equipo": "Expertos",
+                                                                "herramienta": "Ninguno",
+                                                                "interacciones": [
+                                                                  {
+                                                                    "id": "efd0246a-7b5f-47a7-8d17-307d045911c1",
+                                                                    "tipo": "Díalogo",
+                                                                    "texto": "El usuario responde.",
+                                                                    "actor": "Des. Usuario",
+                                                                    "isExpanded": null,
+                                                                    "equipo": "Ninguno",
+                                                                    "herramienta": "Ninguno",
+                                                                    "interacciones": [
+                                                                      {
+                                                                        "id": "b6f918bd-fca4-4208-b231-8cb74ee579a1",
+                                                                        "tipo": "Díalogo",
+                                                                        "texto": "Solicita al usuario que ingrese los siguientes datos de domicilio del demandante:\n- País (obligatorio)\n- Departamento / Estado / Provincia (obligatorio)\n- Municipio / Ciudad (obligatorio)\n- Dirección notificación judicial (obligatorio)",
+                                                                        "actor": "Instrucción",
+                                                                        "isExpanded": null,
+                                                                        "equipo": "Expertos",
+                                                                        "herramienta": "Ninguno",
+                                                                        "interacciones": [
+                                                                          {
+                                                                            "id": "06eb6f18-00e7-4887-b8d0-7f661fb1a55f",
+                                                                            "tipo": "Díalogo",
+                                                                            "texto": "El usuario responde.",
+                                                                            "actor": "Des. Usuario",
+                                                                            "isExpanded": null,
+                                                                            "equipo": "Ninguno",
+                                                                            "herramienta": "Ninguno",
+                                                                            "interacciones": [
+                                                                              {
+                                                                                "id": "fb473d68-2a64-40ff-a97c-d28bd26c725f",
+                                                                                "tipo": "Díalogo",
+                                                                                "texto": "Solicita al usuario que ingrese los siguientes datos de contacto del demandante: - Teléfono celular (obligatorio) - Teléfono fijo o celular - Correo electrónico (obligatorio)",
+                                                                                "actor": "Instrucción",
+                                                                                "isExpanded": null,
+                                                                                "equipo": "Expertos",
+                                                                                "herramienta": "Ninguno",
+                                                                                "interacciones": [
+                                                                                  {
+                                                                                    "id": "6a67c973-f9c4-4701-90ce-03980dc0fd5f",
+                                                                                    "tipo": "Díalogo",
+                                                                                    "texto": "El usuario responde.",
+                                                                                    "actor": "Des. Usuario",
+                                                                                    "isExpanded": null,
+                                                                                    "equipo": "Ninguno",
+                                                                                    "herramienta": "Ninguno",
+                                                                                    "interacciones": [
+                                                                                      {
+                                                                                        "id": "adf9e924-1095-4e70-a1e8-67f83cd3196d",
+                                                                                        "tipo": "Díalogo",
+                                                                                        "texto": "Solicita al usuario que describa brevemente los detalles de la demanda.",
+                                                                                        "actor": "Instrucción",
+                                                                                        "isExpanded": null,
+                                                                                        "equipo": "Ninguno",
+                                                                                        "herramienta": "Ninguno",
+                                                                                        "interacciones": [
+                                                                                          {
+                                                                                            "id": "baa04650-17f7-4724-a700-b003d68eb589",
+                                                                                            "tipo": "Díalogo",
+                                                                                            "texto": "El usuario responde.",
+                                                                                            "actor": "Des. Usuario",
+                                                                                            "isExpanded": null,
+                                                                                            "equipo": "Ninguno",
+                                                                                            "herramienta": "Ninguno",
+                                                                                            "interacciones": [
+                                                                                              {
+                                                                                                "id": "63b2980e-1f50-4405-a8e6-55bb5b4b36c5",
+                                                                                                "tipo": "Díalogo",
+                                                                                                "texto": "Finaliza la conversación de manera amable e informa al usuario que puede descargar un borrador de la demanda utilizando el botón ubicado en la parte inferior derecha, o bien acceder al formulario a través del botón continuo.",
+                                                                                                "actor": "Instrucción",
+                                                                                                "isExpanded": null,
+                                                                                                "equipo": "Expertos",
+                                                                                                "herramienta": "Ninguno",
+                                                                                                "interacciones": []
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "id": "330b2bd5-defd-4641-afce-6eeecdef73d2",
+                                                            "tipo": "Díalogo",
+                                                            "texto": "El usuario responde: Jurídica.",
+                                                            "actor": "Des. Usuario",
+                                                            "isExpanded": null,
+                                                            "equipo": "Ninguno",
+                                                            "herramienta": "Ninguno",
+                                                            "interacciones": [
+                                                              {
+                                                                "id": "cbf75f1e-6cdd-417b-8a0d-8bb5738d00db",
+                                                                "tipo": "Díalogo",
+                                                                "texto": "Solicita al usuario que ingrese los siguientes datos del demandante: - Tipo de documento (obligatorio) - Identificación sin número de verificación (obligatorio) - Razón social (obligatorio)",
+                                                                "actor": "Instrucción",
+                                                                "isExpanded": null,
+                                                                "equipo": "Expertos",
+                                                                "herramienta": "Ninguno",
+                                                                "interacciones": [
+                                                                  {
+                                                                    "id": "40712afa-4304-4d2c-b7e7-e726dd465826",
+                                                                    "tipo": "Díalogo",
+                                                                    "texto": "El usuario responde.",
+                                                                    "actor": "Des. Usuario",
+                                                                    "isExpanded": null,
+                                                                    "equipo": "Ninguno",
+                                                                    "herramienta": "Ninguno",
+                                                                    "interacciones": [
+                                                                      {
+                                                                        "id": "50109adf-1db5-41b1-8992-1bc21203ff81",
+                                                                        "tipo": "Díalogo",
+                                                                        "texto": "Solicita al usuario que ingrese los siguientes datos de domicilio del demandante:\n- País (obligatorio)\n- Dirección notificación judicial (obligatorio)\n- Dirección comercial",
+                                                                        "actor": "Instrucción",
+                                                                        "isExpanded": null,
+                                                                        "equipo": "Expertos",
+                                                                        "herramienta": "Ninguno",
+                                                                        "interacciones": [
+                                                                          {
+                                                                            "id": "170956ad-eac8-462f-bf42-2bda16e7bf96",
+                                                                            "tipo": "Díalogo",
+                                                                            "texto": "El usuario responde.",
+                                                                            "actor": "Des. Usuario",
+                                                                            "isExpanded": true,
+                                                                            "equipo": "Ninguno",
+                                                                            "herramienta": "Ninguno",
+                                                                            "interacciones": [
+                                                                              {
+                                                                                "id": "61ff5297-e75a-4f79-a9b1-132b6e521f98",
+                                                                                "tipo": "Salta a",
+                                                                                "texto": "Salta a: fb473d68-2a64-40ff-a97c-d28bd26c725f",
+                                                                                "actor": "Salto",
+                                                                                "isExpanded": false,
+                                                                                "equipo": "Expertos",
+                                                                                "herramienta": "Ninguno",
+                                                                                "interacciones": []
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "0d2a199a-8337-48b6-b662-b7e48bd71f01",
+                            "tipo": "Díalogo",
+                            "texto": "El usuario responde: Jurídica.",
+                            "actor": "Des. Usuario",
+                            "isExpanded": true,
+                            "equipo": "Ninguno",
+                            "herramienta": "Ninguno",
+                            "interacciones": [
+                              {
+                                "id": "8a9ad08e-7e66-47a9-b46c-5cd5b8c4f6f9",
+                                "tipo": "Díalogo",
+                                "texto": "Solicita al usuario que ingrese los siguientes datos del apoderado: - Tipo de documento (obligatorio) - Identificación sin número de verificación (obligatorio) - Razón social (obligatorio)",
+                                "actor": "Instrucción",
+                                "isExpanded": true,
+                                "equipo": "Expertos",
+                                "herramienta": "Ninguno",
+                                "interacciones": [
+                                  {
+                                    "id": "c9167d49-00d3-44c3-a76e-9899480d0333",
+                                    "tipo": "Díalogo",
+                                    "texto": "El usuario responde.",
+                                    "actor": "Des. Usuario",
+                                    "isExpanded": true,
+                                    "equipo": "Ninguno",
+                                    "herramienta": "Ninguno",
+                                    "interacciones": [
+                                      {
+                                        "id": "ccd7724e-f53b-4094-8eaf-a7d779b1535a",
+                                        "tipo": "Díalogo",
+                                        "texto": "Solicita al usuario que ingrese los siguientes datos de domicilio del apoderado:\n- País (obligatorio)\n- Dirección notificación judicial (obligatorio)",
+                                        "actor": "Instrucción",
+                                        "isExpanded": true,
+                                        "equipo": "Ninguno",
+                                        "herramienta": "Ninguno",
+                                        "interacciones": [
+                                          {
+                                            "id": "345c0506-29d2-40bd-a925-a1ef076af551",
+                                            "tipo": "Díalogo",
+                                            "texto": "El usuario responde.",
+                                            "actor": "Des. Usuario",
+                                            "isExpanded": true,
+                                            "equipo": "Ninguno",
+                                            "herramienta": "Ninguno",
+                                            "interacciones": [
+                                              {
+                                                "id": "70bc2435-c21f-4bb7-a607-d9c8f08ce433",
+                                                "tipo": "Díalogo",
+                                                "texto": "Solicita al usuario que ingrese los siguientes datos de contacto del apoderado: - Teléfono celular (obligatorio) - Teléfono fijo o celular - Correo electrónico (obligatorio)",
+                                                "actor": "Instrucción",
+                                                "isExpanded": true,
+                                                "equipo": "Expertos",
+                                                "herramienta": "Ninguno",
+                                                "interacciones": [
+                                                  {
+                                                    "id": "020d2fd2-9c0c-40c2-83a5-55b08ae21c69",
+                                                    "tipo": "Díalogo",
+                                                    "texto": "El usuario responde.",
+                                                    "actor": "Des. Usuario",
+                                                    "isExpanded": true,
+                                                    "equipo": "Ninguno",
+                                                    "herramienta": "Ninguno",
+                                                    "interacciones": [
+                                                      {
+                                                        "id": "50dd0383-98b3-4dcb-865b-dfcb84543b12",
+                                                        "tipo": "Salta a",
+                                                        "texto": "Salta a: ad2ef27a-b1d7-40ef-860b-2ff816b3ad3b",
+                                                        "actor": "Salto",
+                                                        "isExpanded": false,
+                                                        "equipo": "Expertos",
+                                                        "herramienta": "Ninguno",
+                                                        "interacciones": []
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "be28c61c-323d-4183-89b2-4a6fd8c6ed43",
+                    "tipo": "Díalogo",
+                    "texto": "El usuario responde: No.",
+                    "actor": "Des. Usuario",
+                    "isExpanded": true,
+                    "equipo": "Ninguno",
+                    "herramienta": "Ninguno",
+                    "interacciones": [
+                      {
+                        "id": "84d40c15-0a62-4c67-a7c5-7137fd65ba26",
+                        "tipo": "Salta a",
+                        "texto": "Salta a: ad2ef27a-b1d7-40ef-860b-2ff816b3ad3b",
+                        "actor": "Salto",
+                        "isExpanded": false,
+                        "equipo": "Expertos",
+                        "herramienta": "Ninguno",
+                        "interacciones": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "4124fccd-c611-4615-9f4e-a1be65546d6a",
+            "tipo": "Díalogo",
+            "texto": "El texto contiene la palabra VERIFICAR.",
+            "actor": "Instrucción",
+            "isExpanded": null,
+            "equipo": "Ninguno",
+            "herramienta": "Ninguno",
+            "interacciones": [
+              {
+                "id": "ead9f2b9-539a-4420-a02b-e379c88fe606",
+                "tipo": "Díalogo",
+                "texto": "Por favor, indicale al usuario que responda: “Sí” si la situación descrita se relaciona con alguno de los siguientes supuestos, o “No” en caso contrario:\n* El caso prentado debe coincidir con los procedimiento o tecnologías definidas en CUPS del Anexo 2 de la Resolución 2718 de 2024 [CUPS](https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/DE/DIJ/resolucion-2718-de-2024.pdf). \nRecuerdale al usuario que el caso debe referirse a la negativa de la EPS (o entidad asimilada) a cubrir un servicio, procedimiento o tecnología que SÍ está dentro del Plan de Beneficios en Salud (PBS) y cuya falta ponga en riesgo la salud del usuario.",
+                "actor": "Instrucción",
+                "isExpanded": null,
+                "equipo": "Ninguno",
+                "herramienta": "Ninguno",
+                "interacciones": [
+                  {
+                    "id": "8734c4bf-6665-4bfa-b981-5abd1b1c4cce",
+                    "tipo": "Díalogo",
+                    "texto": "El usuario responde: Sí.",
+                    "actor": "Des. Usuario",
+                    "isExpanded": true,
+                    "equipo": "Ninguno",
+                    "herramienta": "Ninguno",
+                    "interacciones": [
+                      {
+                        "id": "fc2a9fbc-6027-4aa4-b11d-1a2d0ca690cb",
+                        "tipo": "Salta a",
+                        "texto": "Salta a: deb9b5f5-f02c-4800-ba39-ac4b31c4c6cf",
+                        "actor": "Salto",
+                        "isExpanded": false,
+                        "equipo": "Expertos",
+                        "herramienta": "Ninguno",
+                        "interacciones": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "013d1f63-1184-4404-8d23-1a9dd48fca5c",
+                    "tipo": "Díalogo",
+                    "texto": "El usuario responde: No.",
+                    "actor": "Des. Usuario",
+                    "isExpanded": null,
+                    "equipo": "Ninguno",
+                    "herramienta": "Ninguno",
+                    "interacciones": [
+                      {
+                        "id": "568e7718-e679-4587-9ebb-7cd27dc55c5d",
+                        "tipo": "Díalogo",
+                        "texto": "Expica al usuario que el caso probablemente la entidad no la acepte al no estar en concordancia con CUPS del Anexo 2 de la Resolución 2718 de 2024. Indicale que puede obtener más informacion en: [Supersalud](https://www.supersalud.gov.co/es-co/Paginas/Home.aspx) y finaliza amablemente la converzacion.",
+                        "actor": "Instrucción",
+                        "isExpanded": null,
+                        "equipo": "Expertos",
+                        "herramienta": "Ninguno",
+                        "interacciones": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
