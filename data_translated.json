@@ -1,0 +1,502 @@
+[
+  {
+    "id": "RESPUESTA_USUARIO___knSD50Le8PsU3Gy8xVm7WOAoOEwseZ",
+    "tipo": "Dialogue",
+    "texto": "The user indicates: National Superintendence of Health - Coverage form.",
+    "actor": "Des. User",
+    "isExpanded": null,
+    "equipo": "None",
+    "herramienta": "None",
+    "interacciones": [
+      {
+        "id": "INDICACION__________NcSI7DF8LS8EcTk1JXR0kuVwtLqfPn",
+        "tipo": "Dialogue",
+        "texto": "According to your knowledge, compare with known cases the case mentioned by the user and determine if there is similarity. If there is, answer only with the word **APPLICATE**. If you do not find similarity with any of the cases, answer only with the word **VERIFY**.",
+        "actor": "Instruction",
+        "isExpanded": null,
+        "equipo": "Experts",
+        "herramienta": "None",
+        "interacciones": [
+          {
+            "id": "INDICACION__________rDxREMTH5LzVBKM2uE6OrcKthNmIFB",
+            "tipo": "Dialogue",
+            "texto": "The text contains the word APPLIES.",
+            "actor": "Instruction",
+            "isExpanded": null,
+            "equipo": "None",
+            "herramienta": "None",
+            "interacciones": [
+              {
+                "id": "INDICACION__________xojroiKaH0hAFsndZbVVrxcfOqntLV",
+                "tipo": "Dialogue",
+                "texto": "Question to user Do you use a lawyer?",
+                "actor": "Instruction",
+                "isExpanded": null,
+                "equipo": "None",
+                "herramienta": "None",
+                "interacciones": [
+                  {
+                    "id": "RESPUESTA_USUARIO___5LGDifI3dOfy2VxkSOwhIPG6KbRwfR",
+                    "tipo": "Dialogue",
+                    "texto": "The user responds: Yes.",
+                    "actor": "Des. User",
+                    "isExpanded": null,
+                    "equipo": "None",
+                    "herramienta": "None",
+                    "interacciones": [
+                      {
+                        "id": "INDICACION__________4XNU4i3tIBieD9fkmj4VYQ7vXf7Kuy",
+                        "tipo": "Dialogue",
+                        "texto": "Ask the user which **\"Type of user is the proxy \"** of the options: - Natural - Legal",
+                        "actor": "Instruction",
+                        "isExpanded": true,
+                        "equipo": "None",
+                        "herramienta": "None",
+                        "interacciones": [
+                          {
+                            "id": "RESPUESTA_USUARIO___cH6xtDACdwh8Ns1eKc7b3TRwbLWc31",
+                            "tipo": "Dialogue",
+                            "texto": "The user responds: Natural.",
+                            "actor": "Des. User",
+                            "isExpanded": null,
+                            "equipo": "None",
+                            "herramienta": "None",
+                            "interacciones": [
+                              {
+                                "id": "INDICACION__________5Uikucj3Lwn4rxP8ln61RwB7u2L6sM",
+                                "tipo": "Dialogue",
+                                "texto": "Requests the user to enter the following data of the proxy:\n- Type of document (required)\n- Identification (required)\n- First Name (required)\n- Middle Name (required)\n- First Last Name (required)\n- Second Last Name",
+                                "actor": "Instruction",
+                                "isExpanded": null,
+                                "equipo": "None",
+                                "herramienta": "None",
+                                "interacciones": [
+                                  {
+                                    "id": "RESPUESTA_USUARIO___6FcIAaRxIRQQzJcFHlq1lKNbPqTcDl",
+                                    "tipo": "Dialogue",
+                                    "texto": "The user responds.",
+                                    "actor": "Des. User",
+                                    "isExpanded": null,
+                                    "equipo": "None",
+                                    "herramienta": "None",
+                                    "interacciones": [
+                                      {
+                                        "id": "INDICACION__________bh86TP85V1CeDLh9nOPs6AyKjz5eLL",
+                                        "tipo": "Dialogue",
+                                        "texto": "Requests the user to enter the following data of the proxy's address:\n- Country (required)\n- Legal notification address (required)",
+                                        "actor": "Instruction",
+                                        "isExpanded": null,
+                                        "equipo": "None",
+                                        "herramienta": "None",
+                                        "interacciones": [
+                                          {
+                                            "id": "RESPUESTA_USUARIO___ouBeDwKe1yEa8UNp2Tj0PaXy6W4LCd",
+                                            "tipo": "Dialogue",
+                                            "texto": "The user responds.",
+                                            "actor": "Des. User",
+                                            "isExpanded": null,
+                                            "equipo": "None",
+                                            "herramienta": "None",
+                                            "interacciones": [
+                                              {
+                                                "id": "INDICACION__________hfpKOKuXvLaF4jPALe13cbAF9HqDro",
+                                                "tipo": "Dialogue",
+                                                "texto": "Ask the user to enter the following contact information for the proxy:\n- Cell phone (required)\n- Landline or cell phone\n- E-mail (required)",
+                                                "actor": "Instruction",
+                                                "isExpanded": null,
+                                                "equipo": "None",
+                                                "herramienta": "None",
+                                                "interacciones": [
+                                                  {
+                                                    "id": "RESPUESTA_USUARIO___8PZdcyaWOinudAzVFaZWenQqGDtflu",
+                                                    "tipo": "Dialogue",
+                                                    "texto": "The user responds.",
+                                                    "actor": "Des. User",
+                                                    "isExpanded": null,
+                                                    "equipo": "None",
+                                                    "herramienta": "None",
+                                                    "interacciones": [
+                                                      {
+                                                        "id": "INDICACION__________6dkn8bWbM4pbUydNOgH00UbQYHb3Nx",
+                                                        "tipo": "Dialogue",
+                                                        "texto": "Ask the user which **\"Type of user is the plaintiff \"** of the options: - Natural - Legal",
+                                                        "actor": "Instruction",
+                                                        "isExpanded": null,
+                                                        "equipo": "Experts",
+                                                        "herramienta": "None",
+                                                        "interacciones": [
+                                                          {
+                                                            "id": "RESPUESTA_USUARIO___EjbUl4T2dnezkI78fbhhdOZbu9FP3p",
+                                                            "tipo": "Dialogue",
+                                                            "texto": "The user responds: Natural.",
+                                                            "actor": "Des. User",
+                                                            "isExpanded": null,
+                                                            "equipo": "None",
+                                                            "herramienta": "None",
+                                                            "interacciones": [
+                                                              {
+                                                                "id": "INDICACION__________YjDznG5J6XhaILIzMpVIpEnsv5BtaB",
+                                                                "tipo": "Dialogue",
+                                                                "texto": "Requests the user to enter the following data of the claimant: - Type of document (required) - Identification (required) - First Name (required) - Middle Name - First Last Name (required) - Last Name (required) - Middle Last Name",
+                                                                "actor": "Instruction",
+                                                                "isExpanded": null,
+                                                                "equipo": "Experts",
+                                                                "herramienta": "None",
+                                                                "interacciones": [
+                                                                  {
+                                                                    "id": "RESPUESTA_USUARIO___knkzSK3rFIP9D77hwv8aqyfr1Qug4D",
+                                                                    "tipo": "Dialogue",
+                                                                    "texto": "The user responds.",
+                                                                    "actor": "Des. User",
+                                                                    "isExpanded": null,
+                                                                    "equipo": "None",
+                                                                    "herramienta": "None",
+                                                                    "interacciones": [
+                                                                      {
+                                                                        "id": "INDICACION__________MeqI5bgsVAtu8UI609XfgKEQDmmzm2",
+                                                                        "tipo": "Dialogue",
+                                                                        "texto": "Requests the user to enter the following information about the claimant's address:\n- Country (required)\n- Department / State / Province (required)\n- Municipality / City (required)\n- Court notification address (required)",
+                                                                        "actor": "Instruction",
+                                                                        "isExpanded": null,
+                                                                        "equipo": "Experts",
+                                                                        "herramienta": "None",
+                                                                        "interacciones": [
+                                                                          {
+                                                                            "id": "RESPUESTA_USUARIO___EB7e1VGsY2ngTSoBMntWhzyNcsWaKD",
+                                                                            "tipo": "Dialogue",
+                                                                            "texto": "The user responds.",
+                                                                            "actor": "Des. User",
+                                                                            "isExpanded": null,
+                                                                            "equipo": "None",
+                                                                            "herramienta": "None",
+                                                                            "interacciones": [
+                                                                              {
+                                                                                "id": "INDICACION__________GLim32JFBvNGon8mKQ0udOezkLQBmh",
+                                                                                "tipo": "Dialogue",
+                                                                                "texto": "Requests the user to enter the following contact information for the claimant: - Cell phone (required) - Landline or cell phone - E-mail (required)",
+                                                                                "actor": "Instruction",
+                                                                                "isExpanded": null,
+                                                                                "equipo": "Experts",
+                                                                                "herramienta": "None",
+                                                                                "interacciones": [
+                                                                                  {
+                                                                                    "id": "RESPUESTA_USUARIO___43YIWm9wZP6t9w0iEExSMjmGvFNbSv",
+                                                                                    "tipo": "Dialogue",
+                                                                                    "texto": "The user responds.",
+                                                                                    "actor": "Des. User",
+                                                                                    "isExpanded": null,
+                                                                                    "equipo": "None",
+                                                                                    "herramienta": "None",
+                                                                                    "interacciones": [
+                                                                                      {
+                                                                                        "id": "INDICACION__________nxbQD55HJfnkVQxciURTZQCmJeUdax",
+                                                                                        "tipo": "Dialogue",
+                                                                                        "texto": "Ask the user to briefly describe the details of the claim.",
+                                                                                        "actor": "Instruction",
+                                                                                        "isExpanded": null,
+                                                                                        "equipo": "None",
+                                                                                        "herramienta": "None",
+                                                                                        "interacciones": [
+                                                                                          {
+                                                                                            "id": "RESPUESTA_USUARIO___hzXyzaIaX0FD4BXXz8SpqSWRGngJ35",
+                                                                                            "tipo": "Dialogue",
+                                                                                            "texto": "The user responds.",
+                                                                                            "actor": "Des. User",
+                                                                                            "isExpanded": null,
+                                                                                            "equipo": "None",
+                                                                                            "herramienta": "None",
+                                                                                            "interacciones": [
+                                                                                              {
+                                                                                                "id": "INDICACION__________0RIyReurqcAAXA6hVBf2C8v9vk4eZc",
+                                                                                                "tipo": "Dialogue",
+                                                                                                "texto": "It ends the conversation in a friendly manner and informs the user that he/she can download a draft of the claim using the button located at the bottom right, or access the form through the continuous button.",
+                                                                                                "actor": "Instruction",
+                                                                                                "isExpanded": null,
+                                                                                                "equipo": "Experts",
+                                                                                                "herramienta": "None",
+                                                                                                "interacciones": []
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "id": "RESPUESTA_USUARIO___wI0XMNmxJU40v0lKpVwdwxanS8utk7",
+                                                            "tipo": "Dialogue",
+                                                            "texto": "The user responds: Legal.",
+                                                            "actor": "Des. User",
+                                                            "isExpanded": null,
+                                                            "equipo": "None",
+                                                            "herramienta": "None",
+                                                            "interacciones": [
+                                                              {
+                                                                "id": "INDICACION__________RlS4iqSJFWuyO1iohMWXWHtVd5qKTi",
+                                                                "tipo": "Dialogue",
+                                                                "texto": "Requests the user to enter the following data of the claimant: - Type of document (required) - Identification without verification number (required) - Company name (required)",
+                                                                "actor": "Instruction",
+                                                                "isExpanded": null,
+                                                                "equipo": "Experts",
+                                                                "herramienta": "None",
+                                                                "interacciones": [
+                                                                  {
+                                                                    "id": "RESPUESTA_USUARIO___Cl8Nm8M4tefnmP83C5bYa7nMdTvVHK",
+                                                                    "tipo": "Dialogue",
+                                                                    "texto": "The user responds.",
+                                                                    "actor": "Des. User",
+                                                                    "isExpanded": null,
+                                                                    "equipo": "None",
+                                                                    "herramienta": "None",
+                                                                    "interacciones": [
+                                                                      {
+                                                                        "id": "INDICACION__________kwkJzxPmlM8tWxgYGjuNHWyVt0uWql",
+                                                                        "tipo": "Dialogue",
+                                                                        "texto": "Requests the user to enter the following information about the claimant's address:\n- Country (required)\n- Court notification address (required)\n- Business address",
+                                                                        "actor": "Instruction",
+                                                                        "isExpanded": null,
+                                                                        "equipo": "Experts",
+                                                                        "herramienta": "None",
+                                                                        "interacciones": [
+                                                                          {
+                                                                            "id": "RESPUESTA_USUARIO___e4r79WAh5HfMZNTLMQIfySUcBDRw6Q",
+                                                                            "tipo": "Dialogue",
+                                                                            "texto": "The user responds.",
+                                                                            "actor": "Des. User",
+                                                                            "isExpanded": true,
+                                                                            "equipo": "None",
+                                                                            "herramienta": "None",
+                                                                            "interacciones": [
+                                                                              {
+                                                                                "id": "OTROS_______________c5w2bbJShEtSHb56wit7wR7kxEYuIh",
+                                                                                "tipo": "Salta a",
+                                                                                "texto": "Jump to: fb473d68-2a64-40ff-a97c-d28bd26c725f",
+                                                                                "actor": "Jump",
+                                                                                "isExpanded": false,
+                                                                                "equipo": "Experts",
+                                                                                "herramienta": "None",
+                                                                                "interacciones": []
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "RESPUESTA_USUARIO___RpHss4YhqNsh7VExjbw2q2EPRDW2LF",
+                            "tipo": "Dialogue",
+                            "texto": "The user responds: Legal.",
+                            "actor": "Des. User",
+                            "isExpanded": true,
+                            "equipo": "None",
+                            "herramienta": "None",
+                            "interacciones": [
+                              {
+                                "id": "INDICACION__________4ffOJcCvVhrhzAKOkOMCdtb5rgI6p5",
+                                "tipo": "Dialogue",
+                                "texto": "Requests the user to enter the following data of the attorney-in-fact: - Type of document (required) - ID without verification number (required) - Company name (required)",
+                                "actor": "Instruction",
+                                "isExpanded": true,
+                                "equipo": "Experts",
+                                "herramienta": "None",
+                                "interacciones": [
+                                  {
+                                    "id": "RESPUESTA_USUARIO___7zO56anZvgBsnzPvABixQ8kXcb33qA",
+                                    "tipo": "Dialogue",
+                                    "texto": "The user responds.",
+                                    "actor": "Des. User",
+                                    "isExpanded": true,
+                                    "equipo": "None",
+                                    "herramienta": "None",
+                                    "interacciones": [
+                                      {
+                                        "id": "INDICACION__________gORkJMMCBYO64jjQxpDOhk4i01jF0x",
+                                        "tipo": "Dialogue",
+                                        "texto": "Requests the user to enter the following data of the proxy's address:\n- Country (required)\n- Legal notification address (required)",
+                                        "actor": "Instruction",
+                                        "isExpanded": true,
+                                        "equipo": "None",
+                                        "herramienta": "None",
+                                        "interacciones": [
+                                          {
+                                            "id": "RESPUESTA_USUARIO___Bg4MFAt8qLevOfY9TCmPPhyTJa0o5P",
+                                            "tipo": "Dialogue",
+                                            "texto": "The user responds.",
+                                            "actor": "Des. User",
+                                            "isExpanded": true,
+                                            "equipo": "None",
+                                            "herramienta": "None",
+                                            "interacciones": [
+                                              {
+                                                "id": "INDICACION__________RPgfAIfhDY8jlemPK8z5LqCei7AiyB",
+                                                "tipo": "Dialogue",
+                                                "texto": "Requests the user to enter the following contact information for the proxy: - Cell phone (required) - Landline or cell phone - E-mail (required)",
+                                                "actor": "Instruction",
+                                                "isExpanded": true,
+                                                "equipo": "Experts",
+                                                "herramienta": "None",
+                                                "interacciones": [
+                                                  {
+                                                    "id": "RESPUESTA_USUARIO___djeP36X1eyxekeZszqG5tJw4Cijf72",
+                                                    "tipo": "Dialogue",
+                                                    "texto": "The user responds.",
+                                                    "actor": "Des. User",
+                                                    "isExpanded": true,
+                                                    "equipo": "None",
+                                                    "herramienta": "None",
+                                                    "interacciones": [
+                                                      {
+                                                        "id": "OTROS_______________NUvLcJW28HfvoCPsBZR2i6oosW7gOn",
+                                                        "tipo": "Salta a",
+                                                        "texto": "Jump to: ad2ef27a-b1d7-40ef-860b-2ff816b3ad3b",
+                                                        "actor": "Jump",
+                                                        "isExpanded": false,
+                                                        "equipo": "Experts",
+                                                        "herramienta": "None",
+                                                        "interacciones": []
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "RESPUESTA_USUARIO___74sJrcvcNJQJWFw4MZFDySgvCFZk5O",
+                    "tipo": "Dialogue",
+                    "texto": "The user answers: No.",
+                    "actor": "Des. User",
+                    "isExpanded": true,
+                    "equipo": "None",
+                    "herramienta": "None",
+                    "interacciones": [
+                      {
+                        "id": "OTROS_______________2FSuoaK2zjduOGRepv3Rzl4NSLSu0n",
+                        "tipo": "Salta a",
+                        "texto": "Jump to: ad2ef27a-b1d7-40ef-860b-2ff816b3ad3b",
+                        "actor": "Jump",
+                        "isExpanded": false,
+                        "equipo": "Experts",
+                        "herramienta": "None",
+                        "interacciones": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "INDICACION__________gTvm9lkfMZo4ThnZrdbjhYbnnsFcro",
+            "tipo": "Dialogue",
+            "texto": "The text contains the word VERIFY.",
+            "actor": "Instruction",
+            "isExpanded": null,
+            "equipo": "None",
+            "herramienta": "None",
+            "interacciones": [
+              {
+                "id": "INDICACION__________gdW3V911awQbHLWgCfOgWnqUSuay5M",
+                "tipo": "Dialogue",
+                "texto": "Please indicate the user to answer: \"Yes\" if the situation described is related to any of the following cases, or \"No\" otherwise:\n* The case presented must match the procedures or technologies defined in CUPS of Annex 2 of Resolution 2718 of 2024 [CUPS](https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/DE/DIJ/resolucion-2718-de-2024.pdf).\nRemind the user that the case must refer to the refusal of the EPS (or assimilated entity) to cover a service, procedure or technology that IS included in the Health Benefits Plan (PBS) and whose lack puts the user's health at risk.",
+                "actor": "Instruction",
+                "isExpanded": null,
+                "equipo": "None",
+                "herramienta": "None",
+                "interacciones": [
+                  {
+                    "id": "RESPUESTA_USUARIO___9T3KCJhQYIkzJlc4z21P2HMOnsmBfq",
+                    "tipo": "Dialogue",
+                    "texto": "The user responds: Yes.",
+                    "actor": "Des. User",
+                    "isExpanded": true,
+                    "equipo": "None",
+                    "herramienta": "None",
+                    "interacciones": [
+                      {
+                        "id": "OTROS_______________DjcOCPQQOQpqSVO4sFsXYbyjvZYrho",
+                        "tipo": "Salta a",
+                        "texto": "Jump to: deb9b5f5-f02c-4800-ba39-ac4b31c4c6cf",
+                        "actor": "Jump",
+                        "isExpanded": false,
+                        "equipo": "Experts",
+                        "herramienta": "None",
+                        "interacciones": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "RESPUESTA_USUARIO___kJC26ld1kxQ65sjgQ1Ha1twzQ59LHN",
+                    "tipo": "Dialogue",
+                    "texto": "The user answers: No.",
+                    "actor": "Des. User",
+                    "isExpanded": null,
+                    "equipo": "None",
+                    "herramienta": "None",
+                    "interacciones": [
+                      {
+                        "id": "INDICACION__________l56g75wPr5ydTHe2v2X4XcW9VRuHuv",
+                        "tipo": "Dialogue",
+                        "texto": "Explain to the user that the case will probably not be accepted by the entity because it is not in accordance with the CUPS of Annex 2 of Resolution 2718 of 2024. Indicate that more information can be obtained at: [Supersalud](https://www.supersalud.gov.co/es-co/Paginas/Home.aspx) and kindly end the conversation.",
+                        "actor": "Instruction",
+                        "isExpanded": null,
+                        "equipo": "Experts",
+                        "herramienta": "None",
+                        "interacciones": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

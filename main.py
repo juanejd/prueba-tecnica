@@ -1,62 +1,69 @@
 import json
 import random
-import string
+from string import ascii_letters, digits
+import deepl
+from dotenv import load_dotenv
+import os
 
-# Cargar JSON original
+load_dotenv()
+
+auth_key = os.getenv("DEEPL_AUTH_KEY")
+translator = deepl.Translator(auth_key)
+
 with open("data.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 
-# Modificamos la categoría de acuerdo al tipo
-def add_category_id(category):
-    category = category.lower()
-    # indicacion o instruccion
-    if "instrucción" in category:
-        return "INDICACION"
-    # respuesta de usuario
-    elif "díalogo" in category or "diálogo" in category:
+def category(actor_str):
+    """
+    funcion que recibe el value de "actor" y retorna el valor solicitado
+    """
+    actor_str = actor_str.replace(" ", "").lower()  # formateamos el string
+    if actor_str == "des.usuario":
         return "RESPUESTA_USUARIO"
-    # Otros
-    elif "salta" in category or "salto" in category:
+    elif actor_str == "instrucción":
+        return "INDICACION"
+    elif actor_str == "salto":
         return "OTROS"
     else:
         return "CONSULTA_DATOS"
 
 
-# Generamos un nuevo ID único combinando la categoría y caracteres aleatorios
-def generate_new_id(id_category, length=50):
-    new_id_category = id_category.replace(" ", "_")
-    # Calculamos cuántos caracteres aleatorios necesitamos
-    random_nums = length - len(new_id_category)
-    # Definimos los caracteres
-    characters = string.ascii_letters + string.digits
-    # Generamos la cadena aleatoria
-    random_nums = "".join(random.choice(characters) for _ in range(random_nums))
-    return new_id_category + random_nums
+def create_id(category, length=50):
+    """
+    funcion que crea un id para cada objeto del JSON
+    """
+    # valida la cantidad de caracteres de la palabra, en caso de que sea menor a 20, lo rellena con "_"
+    if len(category) > 20:
+        category = category[:20]
+    else:
+        category = category.ljust(20, "_")
+    characters = ascii_letters + digits
+    new_id = category + "".join(
+        random.choice(characters) for _ in range(length - len(category))
+    )
+    return new_id
 
 
-# Transformamos recursivamente los IDs del objeto JSON y sus interacciones anidadas
-def transform_ids(item):
-    # Obtenemos la categoría basada en el tipo
-    category = add_category_id(item.get("tipo", ""))
-    # Generamos un nuevo ID único
-    new_id = generate_new_id(category)
-    # Agregamos los nuevos campos a cada campo correspondiente
-    item["categoria_id"] = category
-    item["id"] = new_id
+def modify_ids(data):
+    """
+    Funcion que modifica el id de cada objeto, tomando el value de actor y creando un id nuevo
+    en la funcion create_id
+    """
+    get_actor = category(data.get("actor"))
+    new_id = create_id(get_actor)
+    data["id"] = new_id  # modificamos el id
 
-    # Procesamos recursivamente las interacciones anidadas si existen
-    if "interacciones" in item and isinstance(item["interacciones"], list):
-        item["interacciones"] = [
-            transform_ids(subitem) for subitem in item["interacciones"]
-        ]
+    for key, values in data.items():
+        if key != "interacciones" and key != "isExpanded":
+            data[key] = translator.translate_text(values, target_lang="EN-US").text
+        if key == "interacciones":
+            for item in values:  # recorre cada objeto de interacciones recursivamente
+                modify_ids(item)
+    return data
 
-    return item
 
+new_data = [modify_ids(json_data) for json_data in data]
 
-# Transformamos todos los elementos de la data
-new_data = [transform_ids(item) for item in data]
-
-# Guardamos el resultado en un nuevo archivo JSON
-with open("new_data.json", "w", encoding="utf-8") as f:
+with open("data_translated.json", "w", encoding="utf-8") as f:
     json.dump(new_data, f, indent=4, ensure_ascii=False)
